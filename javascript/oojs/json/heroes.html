@@ -56,6 +56,11 @@
               const myPara3 = document.createElement("p");
               const myList = document.createElement("ul");
 
+              myH2.textContent = hero.name;
+              myPara1.textContent = `Secret identity: ${hero.secretIdentity}`;
+              myPara2.textContent = `Age: ${hero.age}`;
+              myPara3.textContent = 'Superpowers:';
+            
             const superPowers = hero.powers;
             for (const power of superPowers) {
               const listItem = document.createElement("li");
